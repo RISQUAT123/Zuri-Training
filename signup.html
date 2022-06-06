@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+        body {
+            background: url(back.jpg);
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        .nav-links ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .nav-links ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        li a {
+            font-size: 20px;
+            display: block;
+            color: peru;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .signup-box {
+            margin: auto;
+            width: 650px;
+            height: 500px;
+            background: wheat;
+            color: black;
+            left: 50%;
+            top: 55%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            border-radius: 15px;
+            padding: 20px 30px;
+            padding-top: 20px;
+        }
+        
+        #firstname {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #lastname {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #phone-no {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #country {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #password {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #confirm {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #email {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #gender {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        #state {
+            padding: 5px;
+            border: 2px solid peru;
+            margin-right: 20px;
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        .head {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .signup-box input[type="submit"] {
+            margin-left: 250px;
+            margin-bottom: 50px;
+            border: none;
+            outline: none;
+            width: 70px;
+            height: 40px;
+            background: peru;
+            color: white;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        
+        span {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-links">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+
+            </ul>
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <div class="signup-box">
+
+            <div class="head">
+                <h2>Registration Form</h2>
+                <p>Kindly fill out the below form carefully.</p>
+            </div>
+
+            <form>
+                <label for="firstname"><span>Firstname</span></label>
+                <input type="text" id="firstname" placeholder="firstname" Required>
+                <label for="lastname"><span>Lastname</span></label>
+                <input type="text" id="lastname" placeholder="lastname" Required><br><br>
+                <label for="Phone-no"><span>Phone-no</span></label>
+                <input type="text" id="phone-no" placeholder="phone-no" Required>
+                <label for="gender"><span>Gender</span></label>
+                <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="none">Rather not say</option>
+        </select><br><br>
+                <label for="country"><span>Country</span></label>
+                <input type="text" id="country" placeholder="country" Required>
+                <label for="state"><span>State/province</span></label>
+                <input type="text" id="state" Required><br><br>
+                <label for="email"><span>Email</span></label>
+                <input type="text" id="email" placeholder="email" Required>
+                <label for="password"><span>Password</span></label>
+                <input type="password" id="password" placeholder="password" Required><br><br>
+                <label for="confirm-password"><span>Confirm password</span></label>
+                <input type="password" id="confirm" placeholder="confirm-password" Required><br><br><br>
+                <input type="checkbox" Required>Remember me<br>
+                <input type="checkbox" Required> I agree to all terms and conditions.<br>
+
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+
+            <p style="color: black; padding-left: 500px;">&copy2022risquatpersonalwebsite</p>
+
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
